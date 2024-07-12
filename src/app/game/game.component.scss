@@ -2,7 +2,7 @@
     width: 98vw;
     height: 95vh;
     max-width: 100%;
-    background-color: rgb(220, 220, 220);
+    background-color: rgb(44, 83, 54);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,6 +32,12 @@
     }
 }
 
+.played-card {
+    right: 20px;
+    transform: scale(1.2) translate(160px, -180px) rotate(-10deg);
+}
+
+
 .pick-card {
     animation: pick-card-animation 1s ease-in-out;
     transform: scale(1.2) translate(160px, -180px) rotate(-10deg);
@@ -52,3 +58,4 @@
     }
 
 }
+
