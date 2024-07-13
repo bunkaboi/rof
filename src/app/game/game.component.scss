@@ -1,13 +1,8 @@
 .game-field {
-    width: 98vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     max-width: 100%;
     background-color: rgb(44, 83, 54);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,3 +54,13 @@
 
 }
 
+.player-position {
+    position: absolute;
+    right: 0px;
+}
+
+.btn-add {
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}

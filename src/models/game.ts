@@ -1,9 +1,11 @@
 
 export class Game {
     public players: string[] = [];
+    public profileImg: string[] = []
     public stack: string[] | any = [];
     public playedCards: string[] | any  = [];
     public currentPlayer: number[] = [];
+    public profileImages: string[] = ['./../../assets/img/profile_1.jpg', './../../assets/img/profile_2.jpg', './../../assets/img/profile_3.jpg', './../../assets/img/profile_4.jpg']
 
     constructor() {
         for (let i = 1; i < 5; i++ ) {
@@ -13,9 +15,12 @@ export class Game {
             this.stack.push('yellow_' + (i));
         }
         shuffle(this.stack);
+
     }
 
 }
+
+
 
 function shuffle(array: string[]) {
     let currentIndex = array.length;
