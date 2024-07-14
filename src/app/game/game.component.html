@@ -1,7 +1,8 @@
 
 <app-player
 *ngFor="let player of game.players, let i = index" 
-    [ngStyle]="{'top.px': 100 + (i * 100)}"
+    [playerActive]="i == game.currentPlayer"
+    [ngStyle]="{'top.px': 100 + (i * 90)}"
     [name]="player"
     [profileImg]="game.profileImg[i]"
 class="player-position" ></app-player>
@@ -30,4 +31,5 @@ class="player-position" ></app-player>
     <mat-icon>add</mat-icon>
   </button>
 
-  <button (click)="test()">Test</button>
+  <app-game-info [card]="currentCard" class="pin-bottom"></app-game-info>
+

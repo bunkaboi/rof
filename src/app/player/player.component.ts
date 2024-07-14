@@ -13,4 +13,6 @@ export class PlayerComponent {
 
 @Input() profileImg: any;
 
+@Input() playerActive: boolean = false;
+
 }
